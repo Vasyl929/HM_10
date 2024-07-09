@@ -1,0 +1,29 @@
+    1  git config --global user.name "Vasyl Sabara"
+    2  git config --global user.email sabara.vl929@gmail.com
+    3  git clone https://github.com/Vasyl929/HM_10.git
+    4  cd HM_10
+    5  touch text_ignore.txt
+    6  nano .gitignore
+    7  git status
+    8  git add
+    9  git add .gitignore
+   10  git status
+   11  git commit -m "Change created"
+   12  touch main_test.txt
+   13  git add main_test.txt
+   14  git commit -m "New file created"
+   15  git status
+   16  git checkout -b develop
+   17  git branch
+   18  touch develop_test.txt
+   19  git add develop_test.txt
+   20  git commit -m "New file2 created"
+   21  nano develop_test.txt
+   22  git status
+   23  git add develop_test.txt
+   24  git commit -m "New file2 created2"
+   25  git checkout main
+   26  git branch
+   27  git merge develop
+   28  git log
+   29  history > command_list.csv
